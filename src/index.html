@@ -18,9 +18,17 @@
 
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>Loading...</app-root>
 
-  <script>
+  <div class="loading">
+    <h1>~$ bootstrapping firestarter...</h1>
+  </div>
+  
+  <noscript>
+    <h1> not support Javascript!</h1>
+  </noscript>
+
+  <!-- <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js')
       .then((registration) => {
@@ -30,7 +38,7 @@
         console.log('SW error', err);
       });
     }
-  </script>
-  
+  </script> -->
+
 </body>
 </html>

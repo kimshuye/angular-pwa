@@ -9,4 +9,7 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
+  .then((registration) => {
+    console.log('SW registered!');
+  })
   .catch(err => console.log(err));
